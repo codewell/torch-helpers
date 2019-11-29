@@ -2,4 +2,4 @@
 Utility functions for PyTorch.
 
 ## Installation
-`pip install git+https://github.com/codewell/torch-helpers
+`pip install git+https://github.com/codewell/torch-helpers`
