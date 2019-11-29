@@ -13,12 +13,11 @@ def load_best_model(checkpoint_dir, model, optimizer=None, epoch=None):
 
     model.load_state_dict(torch.load(
         f'{checkpoint_dir}/model_weights_{epoch}.pth',
-        map_location='cuda' if torch.cuda.is_available() else 'cpu'
+        map_location=next(model.parameters()).device
     ))
     if optimizer is not None:
         optimizer.load_state_dict(torch.load(
             f'{checkpoint_dir}/model_optimizer_{epoch}.pth',
-            map_location='cuda' if torch.cuda.is_available() else 'cpu'
         ))
 
     return epoch
