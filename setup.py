@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
    name='torch_helpers',
-   version='0.0.2',
+   version='0.0.3',
    description='Utility tools for PyTorch',
    author='Felix Abrahamsson',
    author_email='FelixAbrahamsson@github.com',

@@ -1,5 +1,4 @@
 def get_layer_output_size(input_size, kernel_size, padding, stride, dilation):
-
     if isinstance(kernel_size, int):
         kernel_size = (kernel_size, kernel_size)
     if isinstance(padding, int):
@@ -8,7 +7,6 @@ def get_layer_output_size(input_size, kernel_size, padding, stride, dilation):
         stride = (stride, stride)
     if isinstance(dilation, int):
         dilation = (dilation, dilation)
-
     return (
         (
             input_size[0] + 2 * padding[0]
